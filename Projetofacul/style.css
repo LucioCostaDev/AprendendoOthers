@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    padding: 0;
+    padding:0;
     box-sizing: border-box;
     font-family: 'Mochiy Pop One', sans-serif;
 }
@@ -13,14 +13,19 @@
     flex-wrap: wrap;
 }
 
+
+.menu-mobile{
+    display: none;
+}
+
 header{
     background-color: white;
-    padding: 20px 0;
-    border-bottom: 1px solid rgb(200, 200, 200);
+    padding:20px 0;
+    border-bottom:1px solid rgb(200,200,200);
 }
 
 .logo{
-    color: #136910;
+    color: #0d5725;
 }
 
 .logo h2{
@@ -29,126 +34,128 @@ header{
 }
 
 .menu{
-    width: 80%;
+    width:80%;
     text-align: right;
 }
 
 .menu a{
-    color: #158511;
+    color:#108f2c;
     font-size: 14px;
     text-decoration: none;
     margin-right: 20px;
-    /*transition: 0.4s;*/
+    /*transition:0.4s;*/
 }
 
 .menu a:hover{
-    color: #92be90;
+    color:#2cd176;
 }
 
 .menu .btn-menu{
-    background-color: #1b6918;
+    background-color: #0f8a2e;
     display: inline-block;
-    padding: 8px 16px;
-    color: white;
-    border-radius: 6px;
+    padding:8px 16px;
+    color:white;
+    border-radius:6px;
 }
 
+
 .menu .btn-menu:hover{
-background-color: #093308;
-color: white;
+    background-color:#021f06;
+    color:white;
 }
 
 
 /*
-Selection Main
+Section Main
 */
 
 section.main{
     background-image: url(img/back4.jpg);
     
-    padding: 70px 0;
+    padding:70px 0;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
     background-attachment: fixed;
 }
 
-.main_cta{
-    width: 100%;
-    margin: 60px 0;
+.main__cta{
+    width:100%;
+    margin:60px 0;
     text-align: center;
 }
 
-.main_cta h2{
-    color: #1b6918;
+.main__cta h2{
+    color:#087228;
     font-size: 40px;
 }
 
-.main_cta p{
-    color: gray;
+.main__cta p{
+    color:gray;
     font-size: 19px;
-    margin: 10px 0;
+    margin:10px 0;
 }
 
-.main_cta button{
-    background-color: #1b6918;
+.main__cta button{
+    background-color: #1c793f;
     display: inline-block;
-    padding: 8px 30px;
-    color: white;
-    border-radius: 6px;
+    padding:8px 30px;
+    color:white;
+    border-radius:6px;
     font-size: 16px;
-    border: 0;
+    border:0;
     cursor: pointer;
 }
 
 .diferenciais{
     display: flex;
     flex-wrap: wrap;
-}
+} 
 
-.diferencial-simples{
-    border-radius: 10px;
-    background-color: white;
+.diferencial-single{
+    border-radius:10px;
+    background-color:white;
     width: 23%;
     margin-right: 2%;
-    padding: 50px 20px;
+    padding:50px 20px;
 }
 
-.diferencial-simples i{
-    color: #093308;
+.diferencial-single i{
+    color:#0b4e1c;
     font-size: 23px;
 }
 
-.diferencial-simples h2{
-    color: #136910;
+.diferencial-single h2{
+    color:#085712;
     margin:10px 0;
-    font-size: 13px;
+    font-size: 17px;
 }
 
-.diferencial-simples p{
-    color: gray;
-    font-size: 12px;
+.diferencial-single p{
+    color:gray;
+    font-size: 14px;
     line-height: 30px;
 }
 
+
 section.sobre{
-    padding: 80px 0;
+    padding:80px 0;
 }
 
 .chamada-sobre{
-    width: 100%;
+    width:100%;
     text-align: center;
 }
 
 .chamada-sobre h2{
-    color: #093308;
+    color:#093d18;
     text-transform: uppercase;
 }
 
 .chamada-sobre p{
-font-size: 14px;
-color: gray;
-margin: 10px 0;
+    font-size: 14px;
+    color:gray;
+    margin:10px 0;
 }
 
 .conteudo-sobre{
@@ -157,41 +164,191 @@ margin: 10px 0;
 }
 
 .conteudo-sobre p{
-    width: 48%;
-    margin-right:2%;
-    color: #093308;
+    width:48%;
+    margin-right: 2%;
+    color:#063d0d;
 }
 
 .conteudo-sobre span{
     display: inline-block;
-    width: 100%;
-    margin-top: 10px;
+    width:100%;
+    margin-top:10px;
 }
-
 .conteudo-sobre i{
-    color: #093308;
+    color: #0e8021;
 }
 
 section.conquistas{
-    background-color: white;
-    padding: 20px 0;
+    background-color:#f8fbfe;
+    padding:20px 0;
 }
 
-.conquista-simples{
-    width: 22%;
+.conquista-single{
+    width:22%;
     margin-right: 3%;
     text-align: center;
-    color: #093308;
+     color:#0a4714;
+}
+.conquista-single h2{
+    font-size: 30px;
 }
 
-.conquista-simples h2{
-    font-size: 30;
+.conquista-single img{
+    max-width: 100%;
 }
+
+.conquista-single img{
+    filter: grayscale(100%);
+    transform:scale(1,1);
+    transition: 1s;
+}
+
+
+.conquista-single img:hover{
+    transform:scale(1.1,1.1);
+    filter:grayscale(0);
+}
+
+.menu-items{
+    position: absolute;
+    left:0;
+    top:60px;
+    width:100%;
+    text-align: center;
+    background-color:white;
+    border-bottom:2px solid rgb(4, 44, 4);
+    display: block;
+    opacity: 0;
+    transition: 1s;
+}
+
+.menu-items.show{
+    opacity: 1;
+   
+}
+
+.menu-items.hidde{
+    opacity: 0;
+}
+
+.menu-items a{
+    display: block;
+    text-decoration: none;
+    color:rgb(5, 66, 5);
+}
+
+section.sobre-empreendedor{
+    padding:40px 0;
+}
+.sobre-empreendedor-img{
+    width:50%;
+}
+
+.sobre-empreendedor-img img{max-width: 100%;}
+
+.sobre-empreendedor-content{
+    width:50%;
+    padding:0 50px;
+}
+
+.sobre-empreendedor-content h2{
+    color: #043607;
+    margin-bottom:20px;
+}
+
+.sobre-empreendedor-content p{
+    color:#444;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+
+section.depoimentos{
+    padding:40px 0;
+}
+
+section.depoimentos .depoimentos-chamada{
+    text-align: center;
+
+}
+
+.depoimentos-chamada h2{
+    color: #1c5f0f;
+    text-transform: uppercase;
+}
+
+.depoimentos-chamada p{
+    color:rgb(5, 31, 11);
+    margin:10px 0;
+    font-size: 14px;
+    
+}
+
+.carrousel{
+    display: flex;
+}
+
+.carrousel-single{
+    width:31%;
+    margin-right: 2%;
+    text-align: center;
+}
+
+.carrousel-single-box{
+    padding:20px;
+    background-color:#f3f9fd;
+    border-radius:10px;
+}
+
+.carrousel-single-box p{
+    font-style: italic;
+    color:#4b4b4b;
+    font-size: 14px;
+}
+
+.carrousel-single-box i{
+    color: #c9e3f5;
+    font-size: 19px;
+    padding:0 8px;
+}
+
+.carrousel-single img{
+    width:70px;
+    height:70px;
+    display: inline;
+    margin:10px 0;
+    border-radius:50%;
+}
+
+.carrousel-single span{
+    color:#ccc;
+}
+
+
+
+
 
 @media screen and (max-width: 768px){
-    .diferencial-simples{
-        width: 100%;
+    .diferencial-single{
+        width:100%;
         margin-bottom: 20px;
     }
-    .conteudo-sobre p{width: 100%; margin: 20px 20px;}
+
+    .menu{
+        display: none;
+    }
+    .logo{
+        width:20%;
+    }
+    .menu-mobile{
+        width:80%;
+        text-align: right;
+        display: block;
+    }
+    .menu-mobile i{
+        cursor: pointer;
+        font-size: 23px;
+        margin-top:8px;
+    }
+    .conteudo-sobre p{width:100%;  margin:20px 20px;}
 }
