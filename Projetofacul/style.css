@@ -179,7 +179,7 @@ section.sobre{
 }
 
 section.conquistas{
-    background-color:#f8fbfe;
+    background-color:#a3cea5;
     padding:20px 0;
 }
 
@@ -190,7 +190,7 @@ section.conquistas{
      color:#0a4714;
 }
 .conquista-single h2{
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .conquista-single img{
@@ -237,26 +237,26 @@ section.conquistas{
     color:rgb(5, 66, 5);
 }
 
-section.sobre-empreendedor{
+section.sobre-projeto{
     padding:40px 0;
 }
-.sobre-empreendedor-img{
+.sobre-projeto-img{
     width:50%;
 }
 
-.sobre-empreendedor-img img{max-width: 100%;}
+.sobre-projeto-img img{max-width: 100%;}
 
-.sobre-empreendedor-content{
+.sobre-projeto-content{
     width:50%;
     padding:0 50px;
 }
 
-.sobre-empreendedor-content h2{
+.sobre-projeto-content h2{
     color: #043607;
     margin-bottom:20px;
 }
 
-.sobre-empreendedor-content p{
+.sobre-projeto-content p{
     color:#444;
     font-size: 14px;
     margin-bottom: 14px;
