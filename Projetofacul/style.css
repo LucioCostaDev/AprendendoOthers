@@ -91,7 +91,7 @@ section.main{
 }
 
 .main__cta p{
-    color:gray;
+    color:rgb(12, 11, 11);
     font-size: 19px;
     margin:10px 0;
 }
@@ -132,7 +132,7 @@ section.main{
 }
 
 .diferencial-single p{
-    color:gray;
+    color:rgb(3, 3, 3);
     font-size: 14px;
     line-height: 30px;
 }
@@ -154,7 +154,7 @@ section.sobre{
 
 .chamada-sobre p{
     font-size: 14px;
-    color:gray;
+    color:rgb(8, 8, 8);
     margin:10px 0;
 }
 
