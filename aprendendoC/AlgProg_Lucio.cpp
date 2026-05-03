@@ -20,7 +20,7 @@ struct Aluno {
     float notaFinal;
 };
 
-// --- PROTÓTIPOS DAS FUNÇÕES ---
+// --- FUNÇÕES ---
 // As funções são declaradas aqui para organizar o fluxo do programa
 void exibirMenu();
 void cadastrarAluno(vector<Aluno> &lista);
@@ -63,10 +63,10 @@ int main() {
                 atualizarNota(bancoDeDados);
                 break;
             case 0:
-                cout << "\nEncerrando o sistema acadêmico. Até logo!" << endl;
+                cout << "\nEncerrando o sistema de gerenciamento de alunos. Ate logo!" << endl;
                 break;
             default:
-                cout << "\nOpção invalida! Tente novamente." << endl;
+                cout << "\nOpcao invalida! Tente novamente." << endl;
         }
     } while (opcao != 0);
 
@@ -78,7 +78,7 @@ int main() {
 // Exibe as opções disponíveis no console
 void exibirMenu() {
     cout << "\n========================================" << endl;
-    cout << "       SISTEMA DE CADASTRO DE ALUNOS      " << endl;
+    cout << "       SISTEMA DE GERENCIAMENTO DE ALUNOS      " << endl;
     cout << "========================================" << endl;
     cout << "1. Cadastrar Novo Aluno" << endl;
     cout << "2. Listar Todos os Alunos" << endl;
@@ -114,7 +114,7 @@ void cadastrarAluno(vector<Aluno> &lista) {
 // Percorre o vetor e exibe os dados formatados
 void listarAlunos(const vector<Aluno> &lista) {
     if (lista.empty()) {
-        cout << "\n[!] O sistema não possui alunos cadastrados." << endl;
+        cout << "\n[!] O sistema nao possui alunos cadastrados." << endl;
         return;
     }
 
@@ -139,12 +139,12 @@ void listarAlunos(const vector<Aluno> &lista) {
 // Realiza uma busca linear no vetor com base na matrícula
 void buscarAluno(const vector<Aluno> &lista) {
     if (lista.empty()) {
-        cout << "\n[!] Não há dados para pesquisar." << endl;
+        cout << "\n[!] Nao ha dados para pesquisar." << endl;
         return;
     }
 
     int mat;
-    cout << "\nDigite a matrícula desejada: ";
+    cout << "\nDigite a matricula desejada: ";
     cin >> mat;
 
     for (const auto &aluno : lista) {
@@ -156,18 +156,18 @@ void buscarAluno(const vector<Aluno> &lista) {
             return;
         }
     }
-    cout << "\n[!] Aluno com a matrícula " << mat << " não localizado." << endl;
+    cout << "\n[!] Aluno com a matricula " << mat << " nao localizado." << endl;
 }
 
 // Localiza o aluno e permite a alteração de um campo específico (nota)
 void atualizarNota(vector<Aluno> &lista) {
     if (lista.empty()) {
-        cout << "\n[!] Não há alunos cadastrados para atualizar." << endl;
+        cout << "\n[!] Nao ha alunos cadastrados para atualizar." << endl;
         return;
     }
 
     int mat;
-    cout << "\nDigite a matrícula do aluno: ";
+    cout << "\nDigite a matricula do aluno: ";
     cin >> mat;
 
     for (auto &aluno : lista) {
@@ -179,5 +179,5 @@ void atualizarNota(vector<Aluno> &lista) {
             return;
         }
     }
-    cout << "\n[!] Matrícula " << mat << " não encontrada." << endl;
+    cout << "\n[!] Matricula " << mat << " nao encontrada." << endl;
 }
